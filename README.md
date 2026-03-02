@@ -1,33 +1,59 @@
-
 # 🚀 AI Quant Trading Platform
 
-Real-time AI-powered stock analysis dashboard with machine learning, reinforcement learning, and Gemini AI — built with Streamlit.
+> Real-time AI-powered stock analysis dashboard with machine learning, reinforcement learning, and Gemini AI — built with Streamlit.
 
+---
 
-📸 Overview
+## 📸 Overview
+
 This platform provides institutional-grade trading insights in a web browser. It combines live market data, a custom Transformer model, RL agent, flash crash detection, portfolio optimization, and Google Gemini AI — all auto-refreshing in real time.
 
-✨ Features
-ModuleDescription📡 Live DataAuto-refreshing 1-min intraday bars via Yahoo Finance (5–60s intervals)📊 Technical IndicatorsRSI, MACD, VWAP, rolling volatility, volume spike detection🤖 Transformer ModelCustom PyTorch model trained live — generates BUY / SELL / HOLD signals💥 Flash Crash Detector0–100 risk score across return, volatility, volume, and VWAP dimensions📈 BacktestingSharpe Ratio, Max Drawdown, interactive equity curve (Plotly)🔍 Multi-Stock ScannerScans AAPL, MSFT, GOOGL, AMZN, TSLA simultaneously⚖️ Portfolio OptimizerRisk parity weighting via inverse volatility🎮 RL AgentPPO agent (Stable-Baselines3) with custom Gymnasium environment🧠 Gemini AINatural-language market commentary via Google Gemini API
+---
 
-🛠️ Installation
-Prerequisites
+## ✨ Features
 
-Python 3.9+
-pip
-Google Gemini API key (optional — for AI Decision panel)
+| Module | Description |
+|---|---|
+| 📡 **Live Data** | Auto-refreshing 1-min intraday bars via Yahoo Finance (5–60s intervals) |
+| 📊 **Technical Indicators** | RSI, MACD, VWAP, rolling volatility, volume spike detection |
+| 🤖 **Transformer Model** | Custom PyTorch model trained live — generates BUY / SELL / HOLD signals |
+| 💥 **Flash Crash Detector** | 0–100 risk score across return, volatility, volume, and VWAP dimensions |
+| 📈 **Backtesting** | Sharpe Ratio, Max Drawdown, interactive equity curve (Plotly) |
+| 🔍 **Multi-Stock Scanner** | Scans AAPL, MSFT, GOOGL, AMZN, TSLA simultaneously |
+| ⚖️ **Portfolio Optimizer** | Risk parity weighting via inverse volatility |
+| 🎮 **RL Agent** | PPO agent (Stable-Baselines3) with custom Gymnasium environment |
+| 🧠 **Gemini AI** | Natural-language market commentary via Google Gemini API |
 
-Steps
-1. Clone the repository
-bashgit clone https://github.com/your-username/ai-quant-trading-platform.git
+---
+
+## 🛠️ Installation
+
+### Prerequisites
+- Python 3.9+
+- pip
+- Google Gemini API key *(optional — for AI Decision panel)*
+
+### Steps
+
+**1. Clone the repository**
+```bash
+git clone https://github.com/your-username/ai-quant-trading-platform.git
 cd ai-quant-trading-platform
-2. Install dependencies
-bashpip install streamlit streamlit-autorefresh numpy pandas yfinance ta torch plotly gymnasium stable-baselines3 google-generativeai python-dotenv
-3. Set up environment variables
-bash# Create a .env file in the project root
+```
+
+**2. Install dependencies**
+```bash
+pip install streamlit streamlit-autorefresh numpy pandas yfinance ta torch plotly gymnasium stable-baselines3 google-generativeai python-dotenv
+```
+
+**3. Set up environment variables**
+```bash
 echo "GEMINI_API_KEY=your_api_key_here" > .env
-4. Run the app
-bashstreamlit run App.py
+```
+
+**4. Run the app**
+```bash
+streamlit run App.py
 ```
 
 ---
@@ -83,6 +109,13 @@ gymnasium
 stable-baselines3
 google-generativeai
 python-dotenv
+```
 
-⚠️ Disclaimer
-This platform is for educational and research purposes only. It does not constitute financial advice. Ensure compliance with the terms of service of all third-party providers (Yahoo Finance, Google Gemini) before deploying in production.
+---
+
+## ⚠️ Disclaimer
+
+This platform is for **educational and research purposes only**. It does not constitute financial advice. Ensure compliance with the terms of service of all third-party providers (Yahoo Finance, Google Gemini) before deploying in production.
+
+
+
