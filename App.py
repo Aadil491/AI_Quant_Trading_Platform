@@ -18,7 +18,7 @@ from datetime import datetime
 # PAGE CONFIG
 
 
-st.set_page_config(layout="centered")
+st.set_page_config(layout="wide")
 st.title("🚀 AI Quant Trading Platform")
 
 
@@ -454,3 +454,4 @@ if gen_model:
 else:
 
     st.info("Add GEMINI_API_KEY")
+
